@@ -37,6 +37,7 @@ public class ResultsRevisited {
 	        results += "Total: " + (bio+chem+phys) + "/450\r\n";
 	        return results;
 	    }
+	 
 	 public static void displayPercentage(int phys, int chem, int bio) {
 		 double passPercentage = 60d;
 		 
