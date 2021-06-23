@@ -22,4 +22,5 @@ public class Results {
 	public static int percentage(int total) {
 		return (total * 100) / 450;
 	}
+	
 }
