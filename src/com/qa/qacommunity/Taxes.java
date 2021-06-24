@@ -4,29 +4,57 @@ public class Taxes {
 
 	public static void main(String[] args) {
 		
-		System.out.println(salary(15000));
+		System.out.println(salaryAfterTax(46000));
 
 	}
 	
-	public static float salary(float a) {
+	public static double taxPercentage(double a) {
+		
 		
 		if (a < 15000) {
-			return a;
+			return 0;
 		}
 		
 		else if (a < 20000) {
-			return (float) (a * 0.9);
+			return 0.1;
 		}
 		else if (a < 30000) {
-			return (float) (a * 0.85);
+			return 0.15;
 		}
 		else if (a < 45000) {
-			return (float) (a * 0.8);
+			return 0.2;
 		}
 		
 		else {
-			return (float) (a * 0.75);
+			return 0.25;
 		}
 	
 	}
+	
+	public static double taxAmount(double b) {
+		
+		if (b < 15000) {
+			return 0;
+		}
+		
+		else if (b < 20000) {
+			return 0.1 * b;
+		}
+		else if (b < 30000) {
+			return 0.15 * b;
+		}
+		else if (b < 45000) {
+			return 0.2 * b; 
+		}
+		
+		else {
+			return 0.25 * b;
+		}
+	}
+	
+	public static double salaryAfterTax(double salary) {
+		
+		return salary - taxAmount(salary);
+	}
+	
 }
