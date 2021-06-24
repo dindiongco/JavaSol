@@ -23,12 +23,9 @@ public class EnhancedForLoop {
 				System.out.println(k * k);
 			}
 		}
-			
-		
-
+				
 	}
-	
-	
+		
 	public static boolean checkEven(int a) {
 		
 		if (a % 2 == 0) {
