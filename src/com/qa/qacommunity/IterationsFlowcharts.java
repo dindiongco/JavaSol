@@ -31,9 +31,8 @@ public class IterationsFlowcharts {
 	private static void printNumValue() {
 		int input = 11;
 
-		for(int i = 1; i <= input; i++)
-        {
-            
+		for(int i = 1; i <= input; i++) {
+			
             int length = i - 1;
             
             for(int k = 1; k <= length; k++)

@@ -32,8 +32,15 @@ public class StringManipulation {
 	}
 	
 	private static void vertical(String a) {
+		int space = 0;
 		
-		System.out.println(a.substring(0, 4) + "\n" + a.substring(5, 9) + "\n" + a.substring(10, 14));
+		for (int i = 0; i < a.length(); i++) {
+			if (a.substring(i, i + 1).contentEquals(" ") || i == (a.length()-1)) {
+				System.out.println(a.substring(space, i + 1));
+				space = i + 1;
+			}
+						
+		}
 	}
 	
 	private static void reverseVertical(String a) {
