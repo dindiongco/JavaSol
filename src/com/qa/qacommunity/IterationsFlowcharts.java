@@ -29,11 +29,18 @@ public class IterationsFlowcharts {
 	}
 	
 	private static void printNumValue() {
-		for (int i = 1; i < 11; i++) {
-			for (int j = 0; j < 10; j++) {
-				System.out.println(i);
-			}
-		}
+		int input = 11;
+
+		for(int i = 1; i <= input; i++)
+        {
+            
+            int length = i - 1;
+            
+            for(int k = 1; k <= length; k++)
+            {
+                System.out.println(length);
+            }
+        }
 	}
 
 }
