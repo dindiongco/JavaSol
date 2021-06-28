@@ -3,17 +3,20 @@ package com.qa.qacommunity;
 public class Coins {
 
 	public static void main(String[] args) {
-		cost(10);
-		payment(20);
-	}
 		
-	public static double cost(double price) {
-		return price;
+		
 	}
 	
-	public static double payment(double amount) {
+	public static void coins(double payment, double price) {
 		
-		return amount - cost(0);
+		price = price * 100;
+		payment = payment * 100;
 		
+		double change = payment - price;
+		
+		System.out.println("Your payment is" + price / 100 + "and your change is" + change / 100 + ". \n Thank you for shopping at Tesco. Goodbye!");
+		
+		
+		 
 	}
 }
