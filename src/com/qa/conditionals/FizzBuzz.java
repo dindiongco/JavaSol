@@ -1,4 +1,4 @@
-package com.qa.qacommunity;
+package com.qa.conditionals;
 
 public class FizzBuzz {
 

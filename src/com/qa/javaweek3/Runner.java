@@ -40,7 +40,7 @@ public class Runner {
 		
 		for (User p: people) {
 			System.out.println(p);
-			System.out.println("____");
+			System.out.println("-----");
 		}
 
 	}

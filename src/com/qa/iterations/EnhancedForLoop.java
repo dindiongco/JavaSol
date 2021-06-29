@@ -1,4 +1,4 @@
-package com.qa.qacommunity;
+package com.qa.iterations;
 
 public class EnhancedForLoop {
 
