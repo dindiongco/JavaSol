@@ -3,15 +3,29 @@ package com.qa.qacommunity;
 public class Questionstest {
 
 	public static void main(String[] args) {
-		multiChar("Hi");
+
+		System.out.println(sandwichFilling("xxxbreaDoutputbReadxxx"));
+
 	}
-	
-	public static void multiChar(String input) {
+
+	public static String sandwichFilling(String sandwich) {
+
+		String output = "";
 		
-		for (char c: input.toCharArray()) {
-			System.out.println(c * c * c);
+
+		String between = sandwich.substring(sandwich.toLowerCase().indexOf("bread"), sandwich.toLowerCase().lastIndexOf("bread"));
+
+		if (!sandwich.toLowerCase().matches(".*bread.*bread.*")) {
+		      return "";
+		    }
+		else {
+			
+		for (int i = between.length() - 1; i >= 0; i--) {
+				output = output + between.charAt(i);
+			}
+			return output;
 		}
-		
+
 	}
 
 }

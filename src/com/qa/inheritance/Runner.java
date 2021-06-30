@@ -13,6 +13,7 @@ public class Runner {
 		myDog.wagTail();
 		System.out.println(myDog.getName());
 		myDog.bark();
+		
 						
 		Cat myCat = new Cat();
 		myCat.setAge(2);
@@ -20,9 +21,12 @@ public class Runner {
 		System.out.println(myCat.getName() + " is now " + myCat.getAge() + " years old.");
 		myCat.purr();
 		
+		
 		Dog myFrenchPin = new FrenchPin();
 		myFrenchPin.wagTail();
 		myFrenchPin.bark();
+		
+		System.out.println(myDog);
 		
 	}
 
