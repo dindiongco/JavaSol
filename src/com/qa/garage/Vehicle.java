@@ -2,7 +2,6 @@ package com.qa.garage;
 
 public class Vehicle {
 
-	private String plateNo;
 	private String type;
 	private String brand;
 
@@ -10,18 +9,9 @@ public class Vehicle {
 
 	}
 
-	public Vehicle(String plateNo, String type, String brand) {
-		this.plateNo = plateNo;
+	public Vehicle(String type, String brand) {
 		this.type = type;
-		this.brand = brand;
-	}
-
-	public String getPlateNo() {
-		return plateNo;
-	}
-
-	public void setPlateNo(String plateNo) {
-		this.plateNo = plateNo;
+		this.setBrand(brand);
 	}
 
 	public String getType() {
@@ -38,6 +28,19 @@ public class Vehicle {
 
 	public void setBrand(String brand) {
 		this.brand = brand;
+	}
+
+	public int fixBill() {
+		if (this.type == "Car") {
+			return 1000;
+		}
+		if (this.type == "Motorbike") {
+			return 100;
+		}
+		if (this.type == "Truck") {
+			return 10000;
+		}
+		return 0;
 	}
 
 }

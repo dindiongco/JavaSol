@@ -2,8 +2,17 @@ package com.qa.garage;
 
 public class Car extends Vehicle {
 
+	private String plateNo;
 	private String colour;
-	private int seats;
+
+	public Car() {
+		this.setType("Car");
+	}
+
+	public Car(String plateNo, String colour) {
+		this.plateNo = plateNo;
+		this.colour = colour;
+	}
 
 	public String getColour() {
 		return colour;
@@ -13,12 +22,12 @@ public class Car extends Vehicle {
 		this.colour = colour;
 	}
 
-	public int getSeats() {
-		return seats;
+	public String getPlateNo() {
+		return plateNo;
 	}
 
-	public void setSeats(int seats) {
-		this.seats = seats;
+	public void setPlateNo(String plateNo) {
+		this.plateNo = plateNo;
 	}
 
 }

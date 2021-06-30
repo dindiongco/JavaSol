@@ -13,7 +13,7 @@ public class Garage {
 	
 	public void showGarage() {
 		for (Vehicle v: vehicles) {
-			System.out.println(v.getFixBill());
+			System.out.println(v.fixBill());
 		}
 	}
 	
@@ -33,8 +33,8 @@ public class Garage {
 		this.vehicles.removeAll(vehicles);
 	}
 	
-	public void fixVehicle() {
-		
+	public int fixVehicle(int index) {
+		return this.vehicles.get(index).fixBill();
 	}
 
 }

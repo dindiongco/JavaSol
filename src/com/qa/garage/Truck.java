@@ -2,23 +2,32 @@ package com.qa.garage;
 
 public class Truck extends Vehicle {
 
-	private int wheels;
-	private int loadType;
-
-	public int getWheels() {
-		return wheels;
+	private String plateNo;
+	private String loadType;
+	
+	public Truck() {
+		this.setType("Truck");
 	}
 
-	public void setWheels(int wheels) {
-		this.wheels = wheels;
+	public Truck(String plateNo, String loadType) {
+		this.plateNo = plateNo;
+		this.loadType = loadType;
 	}
 
-	public int getLoadType() {
+	public String getLoadType() {
 		return loadType;
 	}
 
-	public void setLoadType(int loadType) {
+	public void setLoadType(String loadType) {
 		this.loadType = loadType;
+	}
+
+	public String getPlateNo() {
+		return plateNo;
+	}
+
+	public void setPlateNo(String plateNo) {
+		this.plateNo = plateNo;
 	}
 
 }
