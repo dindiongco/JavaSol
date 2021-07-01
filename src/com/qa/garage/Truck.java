@@ -6,10 +6,11 @@ public class Truck extends Vehicle {
 	private String loadType;
 	
 	public Truck() {
-		this.setType("Truck");
+		
 	}
 
 	public Truck(String plateNo, String loadType) {
+		this.setType("Truck");
 		this.plateNo = plateNo;
 		this.loadType = loadType;
 	}

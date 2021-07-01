@@ -6,10 +6,10 @@ public class Car extends Vehicle {
 	private String colour;
 
 	public Car() {
-		this.setType("Car");
 	}
 
 	public Car(String plateNo, String colour) {
+		this.setType("Car");
 		this.plateNo = plateNo;
 		this.colour = colour;
 	}

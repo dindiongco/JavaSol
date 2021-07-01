@@ -6,10 +6,11 @@ public class Motorbike extends Vehicle {
 	private String colour;
 	
 	public Motorbike() {
-		this.setType("Motorbike");
+		
 	}
 
 	public Motorbike(String plateNo, String colour) {
+		this.setType("Motorbike");
 		this.plateNo = plateNo;
 		this.colour = colour;
 	}
