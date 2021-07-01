@@ -11,7 +11,7 @@ public class Vehicle {
 
 	public Vehicle(String type, String brand) {
 		this.type = type;
-		this.setBrand(brand);
+		this.brand = brand;
 	}
 
 	public String getType() {
