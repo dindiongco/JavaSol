@@ -2,14 +2,12 @@ package com.qa.garage;
 
 public class Runner {
 	
-	private static Garage garage;
-	
 	public static void main(String[] args) {
+		Garage garage = new Garage();
 		
-		Car c1 = new Car("ADSS 2OE", "Blue");
+		Vehicle v1 = new Car("Mercedes", "Silver");
 		
-		garage.addVehicle(c1);
-		
+		garage.addVehicle(v1);
+		garage.showGarage();
 	}
-	
 }
