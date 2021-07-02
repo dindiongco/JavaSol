@@ -18,8 +18,6 @@ public class Animal {
 	public void sleep() {
 		System.out.println("zzzz");
 	}
-	
-	
 
 	public String getName() {
 		return name;

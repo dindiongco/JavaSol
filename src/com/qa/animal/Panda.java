@@ -1,6 +1,6 @@
 package com.qa.animal;
 
-public class Panda {
+public class Panda extends Animal implements Walkable {
 	
 	public void bleat() {
 		System.out.println("Squeee squeee");
@@ -8,6 +8,11 @@ public class Panda {
 	
 	public void eat() {
 		System.out.println("The panda eats a bamboo stick.");
+	}
+
+	@Override
+	public void walk() {
+		System.out.println("Panda sleeps instead");		
 	}
 
 }
