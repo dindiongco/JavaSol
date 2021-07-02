@@ -2,7 +2,7 @@ package com.qa.animal;
 
 public class Dog extends Animal implements Walkable, Jumpable{
 	
-	public void bark() {
+	public void noise() {
 		System.out.println("Woof woof");
 	}
 

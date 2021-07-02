@@ -1,6 +1,6 @@
 package com.qa.animal;
 
-public class Animal {
+public abstract class Animal {
 
 	private String name;
 	private String type;
@@ -18,6 +18,8 @@ public class Animal {
 	public void sleep() {
 		System.out.println("zzzz");
 	}
+	
+	public abstract void noise();
 
 	public String getName() {
 		return name;

@@ -2,7 +2,7 @@ package com.qa.animal;
 
 public class Frog extends Animal implements Jumpable, Walkable{
 	
-	public void croak() {
+	public void noise() {
 		System.out.println("Ribbit ribbit");
 	}
 
